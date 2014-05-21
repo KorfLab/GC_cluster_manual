@@ -1,0 +1,649 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>How To Use the UC Davis Genome Center Computer Clusters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+html,body{color:black}*:not('#mkdbuttons'){margin:0;padding:0}#wrapper{font:15px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;padding:30px;margin:15px;font-size:15px;line-height:1.6}#wrapper>*:first-child{margin-top:0 !important}#wrapper>*:last-child{margin-bottom:0 !important}@media screen{#wrapper{box-shadow:0 0 0 1px #cacaca, 0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.7;cursor:text;position:relative;margin:1em 0 15px;padding:0}h1{font-size:2.5em;border-bottom:1px solid #ddd}h2{font-size:2em;border-bottom:1px solid #eee}h3{font-size:1.5em}h4{font-size:1.2em}h5{font-size:1em}h6{color:#777;font-size:1em}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0px}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;margin:15px 0;padding:0}#wrapper>h2:first-child{margin-top:0;padding-top:0}#wrapper>h1:first-child{margin-top:0;padding-top:0}#wrapper>h1:first-child+h2{margin-top:0;padding-top:0}#wrapper>h3:first-child,#wrapper>h4:first-child,#wrapper>h5:first-child,#wrapper>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas, 'Liberation Mono', Courier, monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:none;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:14px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px;margin:26px 0}pre code,pre tt{background-color:transparent;border:none}.poetry pre{font-family:Georgia, Garamond, serif !important;font-style:italic;font-size:110% !important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia, Garamond, serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:none}pre code{overflow:visible}}@media screen{body.inverted{color:#eee !important;border-color:#555;box-shadow:none}.inverted #wrapper,.inverted hr,.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee !important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#eeeeee !important;color:#111}.inverted h2{border-color:#555555}.inverted hr{border-color:#777;border-width:1px !important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eeeeee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eeeeee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted #wrapper{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086B3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#EAF2F5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2B91AF}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#A31515}body.dark #wrapper{background:transparent !important;box-shadow:none !important}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}hr{border:none!important;page-break-after:always!important}h1:nth-of-type(n+2){page-break-before:always}
+}
+
+</style>
+
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <center> 
+
+<h1 id="howtousethegenomecentercomputerclusters">How To Use the Genome Center Computer Clusters</h1>
+
+<h3 id="keithdunawaystellahartonoandkeithbradnam">Keith Dunaway, Stella Hartono, and Keith Bradnam</h3>
+
+<h3 id="version12">Version 1.2</h3>
+<a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="" title="Creative commons license" /></a><br/>
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License
+</center>
+
+<hr />
+
+<p><strong>Note:</strong> This document contains some elements of <a href="http://multimarkdown.com">MultiMarkdown</a><br/>
+as well as standard and GitHub-flavored Markdown. If viewed in an application that<br/>
+supports Multimarkdown, features such as the table of contents will provide internal<br/>
+links to various parts of this document. </p>
+
+<h2 id="tableofcontents">Table of Contents</h2>
+
+<ul>
+<li><a href="#1.1">Part 1: Introduction</a>
+
+<ul>
+<li><a href="#1.2">What is the Genome Center Cluster?</a></li>
+<li><a href="#1.3">How to get an account to use the cluster</a></li>
+<li><a href="#1.4">Computer cluster terminology</a></li>
+<li><a href="#1.5">Best and Worst Practices</a>
+
+<ul>
+<li><a href="#1.6">What you should do (good practices)</a></li>
+<li><a href="#1.7">What you should NOT do (worst practices)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#2.1">Part 2: How to submit jobs to cluster</a>
+
+<ul>
+<li><a href="#2.2">Login to cluster</a></li>
+<li><a href="#2.3">Transfer files to and from the cluster</a>
+
+<ul>
+<li><a href="#2.4">Upload Examples</a></li>
+<li><a href="#2.5">Download Examples</a></li>
+<li><a href="#2.6">Copying Multiple Files</a></li>
+</ul></li>
+<li><a href="#2.7">Installing Programs on the Cluster</a>
+
+<ul>
+<li><a href="#2.8">Precompiled binary</a></li>
+<li><a href="#2.9">Compiling source on the server</a></li>
+</ul></li>
+<li><a href="#2.10">QLOGIN</a></li>
+<li><a href="#2.11">QSUB</a></li>
+<li><a href="#2.12">QSTAT and QDEL</a></li>
+<li><a href="#2.13">O and E Status files</a></li>
+</ul></li>
+<li><a href="#3.1">Part 3: Cluster Description</a></li>
+<li><a href="#4.1">Part 4: Qsub and qlogin parameters</a></li>
+<li><a href="#5.1">Part 5: Qstat options/arguments</a></li>
+<li><a href="#a1.1">Appendix 1: Frequently Asked Questions</a>
+
+<ul>
+<li><a href="#a1.2">How do I login without having to type my password?</a></li>
+</ul></li>
+<li><a href="#a2.1">Appendix 2: Thanks</a></li>
+<li><a href="#a3.1">Appendix 3: Release Notes</a></li>
+</ul>
+
+<hr />
+
+<h2 id="11">Part 1: Introduction</h2>
+
+<p>This document is designed to give users who are new to cluster computing a working knowledge of how to use the Genome Center Cluster that is managed by the <a href="http://genomecenter.ucdavis.edu">UC Davis Genome Center</a>. If you have any questions that are not covered in this manual, contact Keith Dunaway at <a href="mailto:kwdunaway@ucdavis.edu">kwdunaway at ucdavis dot edu</a> (but please check to see if your question is addressed in the <a href="#a1.1">FAQ section</a> first). </p>
+
+<h3 id="12">What is the Genome Center Cluster?</h3>
+
+<p>The GC Cluster is a group of linked computers that are configured in such that they can perform a large number of compute tasks in parallel. The hardware specifications of each computer in the cluster may vary, but they all run the same operating system (Linux). The Genome Center maintains two different clusters (merlot and shiraz) and hardware specifications of all of the computers in both clusters can be found in the <a href="#3.1">Cluster Description</a> section. </p>
+
+<h3 id="13">How to get an account to use the cluster</h3>
+
+<p>The GC Cluster is available to labs and staff at UC Davis who are associated with the Genome Center. You will need to a) have a Genome Center account and b) have special ‘cluster permission’ added to this account. To accomplish either or both, please have your Principal Investigator email Mike Lewis (the cluster manager) at <a href="mailto:mclewis@ucdavis.edu">mclewis at ucdavis dot edu</a> with the following information: </p>
+
+<ol>
+<li>Prefered contact email address</li>
+<li>Desired username</li>
+<li>What lab(s) you work in</li>
+</ol>
+
+<p>Please allow a couple of days for the account to be created. </p>
+
+<h3 id="14">Computer cluster terminology</h3>
+
+<p>In order to use the cluster, you first need to <em>login</em> to the desired cluster (merlot or shiraz). Computer clusters have a main computer that is designated as the <em>head node</em>. This is the computer that you will connect to when you login to the cluster. From the head node you can submit a task to any computer in the cluster, which are known as the <em>nodes</em>. Each task that you need to run is submitted as a <em>job</em>. Computer clusters excel at tasks which can be broken down into many small jobs (e.g. BLAST searches), which can then be run in parallel across multiple nodes. </p>
+
+<h3 id="15">Best and Worst Practices</h3>
+
+<p>This section outlines the best (and worst) practices for working with the cluster. Remember that the cluster is used by many people and if you break the cluster, it’s broken for everyone (not just yourself). So <strong><em>please read the following BEFORE starting to use the cluster!</em></strong> </p>
+
+<h4 id="16">What you should do (good practices)</h4>
+
+<ol>
+<li>Compress your larger files (greater than 25 MB) <em>before</em> uploading/downloading them to/from the cluster (use a Unix tool such as <code>gzip</code>). This will greatly minimize the transfer time which saves you time <em>and</em> frees up bandwidth for other users.</li>
+<li>Test new jobs using the <code>qlogin</code> tool before submitting them using the <code>qsub</code> tool. This will allow you to test your script and ensure it runs without errors as well as keep the head node free.</li>
+<li>Name all of your jobs with the same file extensions (e.g. ‘.bash’). This will be invaluable when organizing multiple log files and the job submission files you create.</li>
+</ol>
+
+<h4 id="17">What you should NOT do (worst practices)</h4>
+
+<ol>
+<li>Do not run programs on the head node! This node is only to be used for submitting jobs to other nodes by using the <code>qlogin</code> command. See the section on <a href="#2.10">QLOGIN</a> for more information.</li>
+<li>Do not stay logged in with <code>qlogin</code> any longer than necessary. When using <code>qlogin</code>, you tie up a node until you logout or get disconnected (even if you are idle). This ties up resources that someone else could be using.</li>
+<li>Do not overuse disk space; make sure that you do not exceed 50 GB. The cluster is shared with &gt;20 other users and there’s only 5 TB of disk space. Keep the most important files (programs, scripts) on the cluster and copy others (result) to your computer then delete them from the cluster. If you ever get a space error, you must clean up space to reduce your footprint. To remove a file once disk space is full, type <code>&gt; filename</code> then delete the file.</li>
+</ol>
+
+<h2 id="21">Part 2: How to submit jobs to cluster</h2>
+
+<p>All of the commands found in this manual are written from the point of view of someone connecting to the cluster from a Unix/Linux computer. Please open a suitable terminal application to use these commands. In later versions of this document, we plan on introducing equivalent Windows commands. The following sections all assume that you have a working GC cluster account (see Introduction section above). Also, while this manual only refers to the merlot cluster for explanations, shiraz works the same for all examples. The address for the shiraz cluster is shiraz.genomecenter.ucdavis.edu. </p>
+
+<h3 id="22">Login to cluster</h3>
+
+<p>Use the <code>ssh</code> command to connect to the cluster using your cluster login name. E.g. for a user ‘john’ who is logging in to the ‘merlot’ cluster:</p>
+<pre><code class="bash">ssh john@merlot.genomecenter.ucdavis.edu</code></pre>
+
+<p><strong>Note:</strong> you will be asked to enter your cluster account password. </p>
+
+<p>Once you login, you should be in your home directory, location: <code>/home/[username]/</code>. So john’s home directory would be <code>/home/john/</code>. Please contact the cluster administrator if this is not the case. </p>
+
+<h3 id="23">Transfer files to and from the cluster</h3>
+
+<p>Use the <code>scp</code> Unix command to copy files to and from the cluster. We advise that you run <code>scp</code> from your <em>local machine</em> and not while logged in to the cluster. If you are not familiar with the <code>scp</code> command, the basic syntax is:</p>
+<pre><code class="bash">scp [[user@]host1:]file1 [[user@]host2:]file2</code></pre>
+
+<h4 id="24">Upload Examples</h4>
+
+<p>The following example assumes that a user (‘john’) wants to transfer a file (‘seqs.fa’) that is in their current directory on their local machine to their home directory on the cluster:</p>
+<pre><code class="bash">scp seqs.fa john@merlot.genomecenter.ucdavis.edu:~/seqs.fa</code></pre>
+
+<p><strong>Note:</strong> you will be asked to enter your cluster account password] </p>
+
+<p>In this case, the <code>~/</code> syntax is a shortcut to refer to the user’s home directory on the cluster, which could also be accessed as <code>/home/john</code>. Whatever is specified after <code>john@merlot.genomecenter.ucdavis.edu:</code> should be a valid location on the cluster where you have permission to write files to (in most cases, this should be your home directory on the cluster). You can optionally rename a file while copying it:</p>
+<pre><code class="bash">scp data.txt john@merlot.genomecenter.ucdavis.edu:~/data.fq</code></pre>
+
+<h4 id="25">Download Examples</h4>
+
+<p>In this example we assume that our user ‘john’ wants to copy a file (‘seqs.blast’) from his home directory on the cluster to whatever his current directory is on his local machine:</p>
+<pre><code class="bash">scp john@merlot.genomecenter.ucdavis.edu:~/seqs.blast .</code></pre>
+
+<p><strong>Note:</strong> The dot character in this example is the method that Unix uses to refer to your <em>current directory</em>. You could replace this with any directory location on your local machine that you have permission to write to. </p>
+
+<h4 id="26">Copying Multiple Files</h4>
+
+<p>We could also transfer multiple files by using similar command, in which we specify the destination at the end:</p>
+<pre><code class="bash">scp &lt;file1&gt; &lt;file2&gt; &lt;file3 file4 file5 &lt;john@merlot:~/destination&gt;</code></pre>
+
+<p>Therefore, using previous examples, this will copy data.txt, data1.txt, and data2.txt from local computer to data_new folder in merlot:</p>
+<pre><code class="bash">scp ./data.txt ./data1.txt ./data2.txt john@merlot.genomecenter.ucdavis.edu:~/data_new/</code></pre>
+
+<p>However, the best way to transfer multiple files is to copy an entire folder. This is done by using the <code>-r</code> option of the <code>scp</code> command:</p>
+<pre><code class="bash">scp -r john@merlot.genomecenter.ucdavis.edu:~/results .</code></pre>
+
+<p>In this example, the directory ‘results’ that exists inside John’s home directory on the cluster is copied to his current directory on his local machine. </p>
+
+<h3 id="27">Installing Programs on the Cluster</h3>
+
+<p>You cannot assume that any program that you want to use (BLAST, bowtie etc.) will already be installed on each node of the cluster. In most cases, you must install the program you want to run yourself. There are two ways to do this. </p>
+
+<h4 id="28">Precompiled binary</h4>
+
+<p>The best way to install programs on the cluster — and this is also the easiest way — is to upload <em>precompiled binaries</em> of the program of interest. You will need to go to the website of the person/group who developed that software and download the correct version of the software (make sure the binaries were compiled for Linux). It’s best to use 64-bit compiled binaries. However, 32-bit binaries will work if 64-bit versions are unavailable. </p>
+
+<p>After downloading the program and copying it to the cluster you will then have to modify your <code>$PATH</code> environment variable in order to let the cluster know where it can find these programs. E.g. assuming that our user John has downloaded the ‘Bowtie’ program to his ‘programs’ directory on the cluster, he would then add this directory to his <code>$PATH</code> like so:</p>
+<pre><code class="bash">PATH=$PATH:/home/john/programs/Bowtie/</code></pre>
+
+<p>This would assume that the directory <code>/home/john/programs/Bowtie</code> contains one or more executable programs that can to be run. Many bioinformatics software packages will often place the executable programs (known as <em>binaries</em>) into a ‘bin’ subdirectory. E.g. you might install NCBI BLAST+ and end up with the BLAST programs (<code>blastn</code>, <code>tblastx</code>, etc.) in the following directory:</p>
+<pre><code class="bash">/home/john/programs/NCBI_BLAST/bin/</code></pre>
+
+<p>An easy way to add multiple directories to your PATH in one go, is by referring to your home directory using the <code>~/</code>syntax. E.g. to add the Bowtie and NCBI BLAST+ directories to your PATH at the same time, you could do the following:</p>
+<pre><code class="bash">PATH=$PATH:~/programs/Bowtie/:~/programs/NCBI_BLAST/bin</code></pre>
+
+<p>Remember, you have to add paths to the PATH variable whenever you start a new instance. This includes every new <code>qlogin</code>, <code>qsub</code>, and <code>ssh</code> connection. </p>
+
+<h4 id="29">Compiling source on the server</h4>
+
+<p>There are some programs that require other programs to work. For instance, <a href="http://liulab.dfci.harvard.edu/CEAS/">CEAS</a> needs R and relevant R libraries to run properly. So, you first need to download and install the <em>source code</em> (<strong>not</strong> the pre-compiled one). Using the R example: </p>
+
+<ol>
+<li>Download the <a href="http://cran.r-project.org/src/base/R-2/">source code of R</a> (.tar.gz), and <strong>not</strong> the <a href="http://cran.r-project.org/bin/linux/">pre-compiled one</a>, then scp it to your cluster home directory.</li>
+<li>Untar and unzip the source code by typing this on cluster home directory. The command is:</li>
+</ol>
+<pre><code class="bash">tar zxvf R-X.XX.X.tar.gz</code></pre>
+
+<p>This will create the R-X.XX.X directory. Change directory to the R directory afterwards.<br/>
+3. Most programs will include the &#8220;configure&#8221; command. Therefore, in order to install the program to your home directory, type into the terminal:</p>
+<pre><code class="bash">./configure --prefix=$HOME/folder</code></pre>
+
+<p>R will do some OS configurations and the terminal will show a bunch of command lines which may take a while. If your program doesn’t do anything after you type configure, skip to step 4.<br/>
+4. Next, type this into the terminal:</p>
+<pre><code class="bash">make</code></pre>
+
+<p>The program will then be compiled. The terminal will show more command lines. Again, this may take a while (usually longer than configure).<br/>
+5. To install the program in the directory that you specified by <code>--prefix=$HOME/folder,</code>you will need to type:</p>
+<pre><code class="bash">make install</code></pre>
+
+<h3 id="210">QLOGIN</h3>
+
+<p>The best way to run jobs on the cluster is by using the <code>qsub</code> command. However, you will first want to make sure your jobs run without error. So, you should login to a node with the same requirements that your job will need in order to run. For example:</p>
+<pre><code class="bash">qlogin</code></pre>
+
+<p>In this example, we logged into a node using the default parameters. This means there is a single processor allocated for your login and the shell is /bin/bash. This default shell is used for the head node as well as all of the documentation in this manual. If you wish to use a different shell, you can change it after logging in by typing:</p>
+<pre><code class="bash">SHELL=&lt;shell_path&gt;</code></pre>
+
+<p>A common desire for jobs is to use multiple processors. This can be designated using the <code>-pe threaded</code> option for the <code>qlogin</code> command. It is important to note that you cannot designate more processors than a node has, so check the <a href="#3.1">Cluster Description</a> to ensure a node can meet the requirements of your job. In the following example, we designate 4 processors:</p>
+<pre><code class="bash">qlogin -pe threaded 4</code></pre>
+
+<p>Now you can use <code>qlogin</code> to login to a node (not the head node) to test all of your programs/scripts in order to ensure proper functionality. Please see <a href="#4.1">qsub and qlogin parameters</a> for a full list of parameters. </p>
+
+<h3 id="211">QSUB</h3>
+
+<p>After you have used <code>qlogin</code> to test that your programs will work, you can then submit jobs to the cluster using the <code>qsub</code> command. To use <code>qsub</code>, you will first need to create a text file which details all of the Unix steps that will run the submitted job. Some of these steps will be the bioinformatics programs that you need to run, but other steps will help you configure your environment, prepare output directories, etc. Technically, this text file is a bash script that will run as its own program. Use a Unix text editor such as <code>nano</code> (or any other that is installed and which you are familiar with) to create your qsub command file, and write each step on its own line:</p>
+<pre><code class="bash">nano example_qsub.bash</code></pre>
+
+<p>Then type the necessary commands within the document itself. Here is an example file where our user (John) is preparing a qsub file which will let him run the bowtie program:</p>
+<pre><code class="bash">#!/bin/bash
+PATH=$PATH:/home/john/programs/Bowtie/
+export PATH
+mkdir /home/john/output
+mkdir /home/john/output/bowtieoutput
+bowtie -q -p 4 -o /home/john/output/bowtieoutput /home/john/genome/mm9 /home/john/input/input.fastq</code></pre>
+
+<p>There are a couple of important things to note in this example. First, the extension of this file is .bash. While not necessary, it is a good practice for organizational purposes. Second, the first line of the document should declare what shell you expect to be running in: <code>#!/bin/bash</code>. Again, not necessary but good practice. The next line adds a directory to the <code>$PATH</code> and if this was not done, the node processing the bash commands would not be able to find the bowtie program. Finally, the <code>-q</code>option was added when calling <code>bowtie</code> which tells the program to only send essential information to the screen. This will be important when checking the status of your processes. Please see <a href="#2.12">QSTAT and QDEL</a> and <a href="#2.13">O and E Status files</a> for more information. </p>
+
+<p>After you are done creating and saving your bash file, you will want to submit it to the cluster to run. This is done by using the qsub command:</p>
+<pre><code class="bash">qsub -S /bin/bash -pe threaded 4 example_qsub.bash</code></pre>
+
+<p>In this example, we specify two parameters. The <code>-S</code> option designates the shell to be <code>/bin/bash</code> (which is the default shell when you login to the cluster but not the default shell for <code>qsub</code>). When using <code>qsub</code>, you must designate the shell in the command line instead of in your job bash file. This is the ONLY difference between calling <code>qsub</code> and <code>qlogin</code>. The <code>-pe threaded</code> option allocates 4 processors to the task submitted through <code>qsub</code>. Please see <a href="#4.1">qsub and qlogin parameters</a> for a full list of parameters. </p>
+
+<p>Once you submit a job using <code>qsub</code>, your job will be added to the que. It will wait there until a node with the designated parameters is free to run your job. You can check the status of your job using the <code>qstat</code> command (see <a href="#2.12">QSTAT and QDEL</a> for a more detailed explanation). Once your job runs, it will do all of the commands outlined in your job file as well as create status files (see <a href="#2.13">O and E Status files</a> for a more detailed explanation). After your job is finished, all new files will be readily available for viewing and download through the head node. </p>
+
+<h3 id="212">QSTAT and QDEL</h3>
+
+<p>Once you submit tasks through <code>qsub</code>, you should check the status of these jobs using <code>qstat</code>. Just type the following into the terminal:</p>
+<pre><code class="bash">qstat</code></pre>
+
+<p>The screen should show you a screen that looks something like this:</p>
+<pre><code class="bash">job-ID prior name user state submit/start at queue slots ja-task-ID
+-------------------------------------------------------------------
+4221962 0.50500 example_qsub.bash  john r  04/30/2012 09:31:12 fat.q@fat-node-0-0.merlot.geno   4 </code></pre>
+
+<p>This gives you a lot of information but the most important is found under <code>state</code> at column 5. The state should be <code>qw</code> (cued) or <code>r</code> (running). However, sometimes there is an error that is noted by having a state of <code>Eqw</code> (error in cued) or <code>Er</code> (error running). If this is the case, then you need to cancel the job immediately by typing either one of these:</p>
+<pre><code class="bash">qdel 4221962
+qdel example_qsub.bash</code></pre>
+
+<p>Sometimes there is a job submission error so you should resubmit the job. If you still get the error, check your job by submitting them manually through <code>qlogin</code>. </p>
+
+<p>You can also check the status of all of the nodes on the cluster using <code>qstat</code>. This is useful for looking at the availability of certain nodes you wish to task for your job. For instance, if you want to allocate 8 processors to your job, you can check the status of the cluster first to see if any nodes are available that can handle this. If not, you may think about lowering the amount of processors required to run your job. Type the following to get a full list of cluster status information:</p>
+<pre><code class="bash">qstat -f</code></pre>
+
+<p>This should print out a huge list of information for each set of nodes. Below is an example of what the output will look like:</p>
+<pre><code class="bash">queuename        qtype resv/used/tot. load_avg  arch states
+---------------------------------------------------------------------
+all.q@compute-0-1.merlot.genom BIP  0/0/2  0.00  lx26-amd64
+---------------------------------------------------------------------
+all.q@compute-0-10.merlot.geno BIP  0/0/2  -NA-  lx26-amd64  E
+---------------------------------------------------------------------</code></pre>
+
+<p>The 6 columns explained: </p>
+
+<ol>
+<li><code>queuename</code> - name of node. You will not have access to some of these so only focus on the ones you do have access to.</li>
+<li><code>qtype</code> - lists what types of jobs can be run on this node (should read <code>BIP</code>). If not, there may be an error with that node.</li>
+<li><code>resv/used/tot.</code> - shows the amount of processors for these three classes in #/#/# format. For example, if there is a queue with no reserved processors, 9 currently used processors, and 16 total processors then the column would read <code>0/9/16</code>. Very useful for processor job determination.</li>
+<li><code>load_avg</code> - shows average processors used.</li>
+<li><code>arch</code> - architecture of the node. It should be the same for every queue: <code>1x26-amd64</code>.</li>
+<li><code>states</code> - shows if there is an error on the subcluster. Usually blank (if working properly). If there are any characters in this column then the subcluster is not working properly.</li>
+</ol>
+
+<h3 id="213">O and E Status files</h3>
+
+<p>Once your job starts running after submitting (using <code>qsub</code>), two files will be created in your home directory with the following format:</p>
+<pre><code class="bash">example_qsub.bash.o4221962
+example_qsub.bash.e4221962</code></pre>
+
+<p>The output (o) file contains everything that your job would normally print to screen. The error (e) file contains any error messages produced from your job. Sometimes, the print to screen output is found in the error file so check both files to see all of this information. </p>
+
+<p>It is important to save this information for troubleshooting and bookkeeping purposes. However, you may want to clean up your home directory by moving these files to a subfolder. I suggest creating a folder (logs for example) and moving them there. If you named all of your submissions with at <code>.bash</code> extension, then moving the files is relatively easy. Just type the following:</p>
+<pre><code class="bash">mv *.bash.o* logs/
+mv *.bash.e* logs/</code></pre>
+
+<h2 id="31">Part 3: Cluster Description</h2>
+
+<p>This section describes the physical properties of the cluster as well as the nodes (good reference for submissions). Contact Mike Lewis for current information. Also, visit the following link for more information: <a href="http://wiki.bioinformatics.ucdavis.edu/images/e/e7/Cluster_presentation.pdf">http://wiki.bioinformatics.ucdavis.edu/images/e/e7/Cluster_presentation.pdf</a> </p>
+
+<h2 id="41">Part 4: Qsub and qlogin parameters</h2>
+
+<p>This section will outline all of the qsub options. Everything that works for qsub works for qlogin.</p>
+<pre><code class="bash">usage: qsub [options]
+
+  [-a date_time]              request a start time
+
+  [-ac context_list]            add context variable(s)
+
+  [-ar ar_id]               bind job to advance reservation
+
+  [-A account_string]           account string in accounting record
+
+  [-b y[es]|n[o]]             handle command as binary
+
+  [-c ckpt_selector]            define type of checkpointing for job
+
+  [-ckpt ckpt-name]            request checkpoint method
+
+  [-clear]                 skip previous definitions for job
+
+  [-cwd]                  use current working directory
+
+  [-C directive_prefix]          define command prefix for job script
+
+  [-dc simple_context_list]        delete context variable(s)
+
+  [-dl date_time]             request a deadline initiation time
+
+  [-e path_list]              specify standard error stream path(s)
+
+  [-h]                   place user hold on job
+
+  [-hard]                 consider following requests &quot;hard&quot;
+
+  [-help]                 print this help
+
+  [-hold_jid job_identifier_list]     define jobnet interdependencies
+
+  [-hold_jid_ad job_identifier_list]    define jobnet array interdependencies
+
+  [-i file_list]              specify standard input stream file(s)
+
+  [-j y[es]|n[o]]             merge stdout and stderr stream of job
+
+  [-js job_share]             share tree or functional job share
+
+  [-jsv jsv_url]              job submission verification script to be used
+
+  [-l resource_list]            request the given resources
+
+  [-m mail_options]            define mail notification events
+
+  [-masterq wc_queue_list]         bind master task to queue(s)
+
+  [-notify]                notify job before killing/suspending it
+
+  [-now y[es]|n[o]]            start job immediately or not at all
+
+  [-M mail_list]              notify these e-mail addresses
+
+  [-N name]                specify job name
+
+  [-o path_list]              specify standard output stream path(s)
+
+  [-P project_name]            set job&apos;s project
+
+  [-p priority]              define job&apos;s relative priority
+
+  [-pe pe-name slot_range]         request slot range for parallel jobs
+
+  [-q wc_queue_list]            bind job to queue(s)
+
+  [-R y[es]|n[o]]             reservation desired
+
+  [-r y[es]|n[o]]             define job as (not) restartable
+
+  [-sc context_list]            set job context (replaces old context)
+
+  [-shell y[es]|n[o]]           start command with or without wrapping &lt;loginshell&gt; -c
+
+  [-soft]                 consider following requests as soft
+
+  [-sync y[es]|n[o]]            wait for job to end and return exit code
+
+  [-S path_list]              command interpreter to be used
+
+  [-t task_id_range]            create a job-array with these tasks
+
+  [-tc max_running_tasks]         throttle the number of concurrent tasks (experimental)
+
+  [-terse]                 tersed output, print only the job-id
+
+  [-v variable_list]            export these environment variables
+
+  [-verify]                do not submit just verify
+
+  [-V]                   export all environment variables
+
+  [-w e|w|n|v|p]              verify mode (error|warning|none|just verify|poke) for jobs
+
+  [-wd working_directory]         use working_directory
+
+  [-@ file]                read commandline input from file
+
+  [{command|-} [command_args]]
+
+account_string     account_name
+
+complex_list      complex[,complex,...]
+
+context_list      variable[=value][,variable[=value],...]
+
+ckpt_selector      &apos;n&apos; &apos;s&apos; &apos;m&apos; &apos;x&apos; &lt;interval&gt; 
+
+date_time        [[CC]YY]MMDDhhmm[.SS]
+
+job_identifier_list   {job_id|job_name|reg_exp}[,{job_id|job_name|reg_exp},...]
+
+jsv_url         [script:][username@]path
+
+mail_address      username[@host]
+
+mail_list        mail_address[,mail_address,...]
+
+mail_options      &apos;e&apos; &apos;b&apos; &apos;a&apos; &apos;n&apos; &apos;s&apos;
+
+working_directory    path
+
+path_list        [host:]path[,[host:]path,...]
+
+file_list        [host:]file[,[host:]file,...]
+
+priority        -1023 - 1024
+
+resource_list      resource[=value][,resource[=value],...]
+
+simple_context_list   variable[,variable,...]
+
+slot_range       [n[-m]|[-]m] - n,m &gt; 0
+
+task_id_range      task_id[&apos;-&apos;task_id[&apos;:&apos;step]]
+
+variable_list      variable[=value][,variable[=value],...]
+
+wc_cqueue        wildcard expression matching a cluster queue
+
+wc_host         wildcard expression matching a host
+
+wc_hostgroup      wildcard expression matching a hostgroup
+
+wc_qinstance      wc_cqueue@wc_host
+
+wc_qdomain       wc_cqueue@wc_hostgroup
+
+wc_queue        wc_cqueue|wc_qdomain|wc_qinstance
+
+wc_queue_list      wc_queue[,wc_queue,...]
+
+ar_id          advance reservation id
+
+max_running_tasks    maximum number of simultaneously running tasks
+</code></pre>
+
+<h2 id="51">Part 5: Qstat options/arguments</h2>
+<pre><code class="bash">
+usage: qstat [options]
+
+    [-ext]              view additional attributes
+
+    [-explain a|c|A|E]        show reason for c(onfiguration ambiguous), a(larm), suspend A(larm), E(rror) state
+
+    [-f]               full output
+
+    [-F [resource_attributes]]    full output and show (selected) resources of queue(s)
+
+    [-g {c}]             display cluster queue summary
+
+    [-g {d}]             display all job-array tasks (do not group)
+
+    [-g {t}]             display all parallel job tasks (do not group)
+
+    [-help]              print this help
+
+    [-j job_identifier_list ]     show scheduler job information
+
+    [-l resource_list]        request the given resources
+
+    [-ne]               hide empty queues
+
+    [-pe pe_list]           select only queues with one of these parallel environments
+
+    [-q wc_queue_list]        print information on given queue
+
+    [-qs {a|c|d|o|s|u|A|C|D|E|S}]   selects queues, which are in the given state(s)
+
+    [-r]               show requested resources of job(s)
+
+    [-s {p|r|s|z|hu|ho|hs|hd|hj|ha|h|a}] show pending, running, suspended, zombie jobs,
+
+                     jobs with a user/operator/system/array-dependency hold, 
+
+                     jobs with a start time in future or any combination only.
+
+                     h is an abbreviation for huhohshdhjha
+
+                     a is an abbreviation for prsh
+
+    [-t]               show task information (implicitly -g t)
+
+    [-u user_list]          view only jobs of this user
+
+    [-U user_list]          select only queues where these users have access
+
+    [-urg]              display job urgency information
+
+    [-pri]              display job priority information
+
+    [-xml]              display the information in XML-Format
+
+pe_list         pe[,pe,...]
+
+job_identifier_list   [job_id|job_name|pattern]{, [job_id|job_name|pattern]}
+
+resource_list      resource[=value][,resource[=value],...]
+
+user_list        user|@group[,user|@group],...]
+
+resource_attributes   resource,resource,...
+
+wc_cqueue        wildcard expression matching a cluster queue
+
+wc_host         wildcard expression matching a host
+
+wc_hostgroup       wildcard expression matching a hostgroup
+
+wc_qinstance       wc_cqueue@wc_host
+
+wc_qdomain        wc_cqueue@wc_hostgroup
+
+wc_queue         wc_cqueue|wc_qdomain|wc_qinstance</code></pre>
+
+<h2 id="a11">Appendix 1: Frequently Asked Questions</h2>
+
+<p>If your question is not found under this section, please see the Troubleshooting/FAQ section found on our website. </p>
+
+<h3 id="a12">How do I login without having to type my password?</h3>
+
+<p>Some of us might find it redundant to type <code>ssh john@merlot.genomecenter.ucdavis.edu</code> each time we want to login to merlot or shiraz cluster (like myself). Therefore instead of typing the full path each time, we just need to type one word. For example, &#8220;cookie&#8221; when we want to login to merlot cluster or &#8220;myfavoritewine&#8221; when we want to login to shiraz cluster. </p>
+
+<p>In order to do this, we need to set up a password-free access to the cluster and then make an alias. For the example below, let’s say that John want to make pw-free access from his macbook to merlot cluster and alias it with &#8220;cookie&#8221; </p>
+
+<p><strong>Part 1: Set up password-free access</strong> </p>
+
+<ul>
+<li>On your local computer terminal (not the cluster terminal), type the following:</li>
+</ul>
+<pre><code class="bash">ssh-keygen -t rsa</code></pre>
+
+<p>Press enter/yes to all questions asked. This will generate a file named <code>id_rsa.pub</code> at directory <code>~/.ssh/</code>. id_rsa.pub is a key file containing “mark” from your computer. </p>
+
+<ul>
+<li>Copy the file to merlot cluster using scp.</li>
+</ul>
+<pre><code class="bash">scp ~/.ssh/id_rsa.pub john@merlot.genomecenter.ucdavis.edu:~/</code></pre>
+
+<ul>
+<li>Then login to merlot cluster with your username and password.</li>
+</ul>
+<pre><code class="bash">ssh john@merlot.genomecenter.ucdavis.edu
+
+&lt;enter password&gt;</code></pre>
+
+<ul>
+<li>Add the content of your &#8220;~/id_rsa.pub&#8221; to merlot’s authorized_keys list in “<sub>/</sub>.ssh/authorized_keys”.</li>
+</ul>
+
+<p><code>cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</code> </p>
+
+<ul>
+<li>You are done! But it is <em>very</em> important to delete the id_rsa.pub from the home directory so your account won’t get hacked (id_rsa.pub is basically the key to your merlot account).</li>
+</ul>
+
+<p><code>rm ~/id_rsa.pub</code> </p>
+
+<ul>
+<li>Now log out, then try login again:</li>
+</ul>
+<pre><code class="bash">ssh john@merlot.genomecenter.ucdavis.edu</code></pre>
+
+<p>If you are successful, then the cluster won’t ask for password. If you are not, check if you have done all parts correctly. Do the same thing to all other cluster computer you want the pw-free access from (e.g. shiraz). You could also set pw-free access from merlot to your local computer, or merlot-to-shiraz, or shiraz-to-merlot, so you could login from anywhere. Just make sure that all id_rsa.pub and its content is only stored in ~/.ssh/authorized_keys and not lying around on your Desktop folder, for example. </p>
+
+<p><strong>Warning Regarding Passwordless SSH:</strong> </p>
+
+<ul>
+<li><em>Making SSH passwordless is potentially a very dangerous situation if you don&#8217;t actually have a password protected screensaver, or if you frequently use a shared computer.</em></li>
+<li><em>Anyone who has access to launching a terminal on your computer can potentially delete all of your data on the cluster. It is unlikely, but sometimes things happen accidentally.</em></li>
+<li><em>Each user is responsible for their Genome Center account. If it is hacked (randomly) because of a weak password, or if someone causes malicious damage to the cluster (gaining access from a passwordless ssh login), the owner of the account is responsible!</em></li>
+</ul>
+
+<p><strong>Part 2: Generating alias</strong> </p>
+
+<p>Make sure all the pw-free access work fine before setting up alias. </p>
+
+<p>First, edit your .profile in home directory and, if you have it, .bash_profile in home directory:</p>
+<pre><code class="bash">nano ~/.profile</code></pre>
+
+<p>Then type this at the very bottom of the .profile (or .bash_profile) then save. Be careful to not introduce space anywhere (especially not in between = and &quot;).</p>
+<pre><code class="bash">alias cookie=&quot;ssh john@merlot.genomecenter.ucdavis.edu&quot;
+alias myfavoritewine=&quot;ssh john@shiraz.genomecenter.ucdavis.edu&quot;</code></pre>
+
+<p>Restart terminal by Alt-Q to quit terminal completely and open new terminal. Then type &#8220;cookie&#8221; in your terminal, and you should log in to merlot. You can rename &#8220;cookie&#8221; to anything you want, e.g. merlot or shiraz, by changing the alias name:</p>
+<pre><code class="bash">alias merlot=&quot;ssh john@merlot.genomecenter.ucdavis.edu&quot;
+alias shiraz=&quot;ssh john@shiraz.genomecenter.ucdavis.edu&quot;</code></pre>
+
+<h2 id="a21">Appendix 2: Contributions and Thanks</h2>
+
+<p>The authors contributed to this document in the following ways: </p>
+
+<ul>
+<li>Keith Dunaway wrote the bulk of the document</li>
+<li>Stella Hartono wrote the FAQ section.</li>
+<li>Keith Bradnam structured the formatting, provided major editing during preliminary versions, converted the document to Markdown and uploaded it to GitHub.</li>
+</ul>
+
+<p>We would also like to thank Paul Lott and Gina Turco for editing after v1.0. </p>
+
+<h2 id="a31">Appendix 3: Release Notes</h2>
+
+<p>v1.1 - 5/14/2013 - Updated answering user questions, changed authors, added thanks section. </p>
+
+<p>v1.0 - 7/30/2012 - Published online for UC Davis Genome Center users to view. </p>
+
+<p>v0.1 - 5/3/2012 - Released manual to genome center employees and students by sharing in Google Docs.</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>
