@@ -1,6 +1,6 @@
-Title:   How To Use the UC Davis Genome Center Computer Clusters
-Authors:  Keith Dunaway, Stella Hartono, and Keith Bradnam
-Date:    2014-05-20
+Title:   How To Use the UC Davis Genome Center Computer Clusters  
+Authors:  Keith Dunaway, Stella Hartono, and Keith Bradnam  
+Date:    2014-05-20  
 Address: Genome Center, UC Davis, Davis, CA, 95616  
  
  
@@ -12,11 +12,15 @@ Address: Genome Center, UC Davis, Davis, CA, 95616
 ### Keith Dunaway, Stella Hartono, and Keith Bradnam
 
 ### Version 1.2
-[![](http://i.creativecommons.org/l/by-nc/4.0/88x31.png "Creative commons license")](http://creativecommons.org/licenses/by-nc/4.0/)
+[![](http://i.creativecommons.org/l/by-nc/4.0/88x31.png "Creative commons license")](http://creativecommons.org/licenses/by-nc/4.0/)  
 This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License
 </center>
 ---
 
+**Note:** This document contains some elements of [MultiMarkdown](http://multimarkdown.com)
+as well as standard and GitHub-flavored Markdown. If viewed in an application that
+supports Multimarkdown, features such as the table of contents will provide internal
+links to various parts of this document.
 
 ## Table of Contents
 
@@ -693,7 +697,9 @@ alias cookie="ssh john@merlot.genomecenter.ucdavis.edu"
 alias myfavoritewine="ssh john@shiraz.genomecenter.ucdavis.edu"
 ```
 
-Restart terminal by Alt-Q to quit terminal completely and open new terminal. Then type "cookie" in your terminal, and you should log in to merlot. You can rename "cookie" to anything you want, e.g. merlot or shiraz, by changing the alias name:```bash
+Restart terminal by Alt-Q to quit terminal completely and open new terminal. Then type "cookie" in your terminal, and you should log in to merlot. You can rename "cookie" to anything you want, e.g. merlot or shiraz, by changing the alias name:
+
+```bash
 alias merlot="ssh john@merlot.genomecenter.ucdavis.edu"
 alias shiraz="ssh john@shiraz.genomecenter.ucdavis.edu"
 ```
